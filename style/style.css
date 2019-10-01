@@ -1,0 +1,25 @@
+.container {
+max-width: 800px;
+}
+
+.box-task {
+
+    margin: 0 auto;
+    max-width: 1000px;
+    height: auto;
+    /*background-color: bisque;*/
+    display: flex;
+    flex-direction: column;
+}
+.panel {
+    display: flex;
+}
+.el-name, .el-mail{
+    flex-basis: 12%;
+}
+.el-status {
+	flex-basis: 20%;
+}
+.el-task {
+    flex-basis: 60%;
+}
