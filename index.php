@@ -65,7 +65,11 @@ $count_pages = ceil(count($data) / 3);
               </div>
 
                 <?php for ($i = 0; $i < count($tasks); $i++): ?>
-                
+                  <?php if ($tasks[$i]["command"] == "edit_task"): ?>
+                    <div class="alert alert-light m-0 p-1" role="alert">
+                        edited!
+                    </div>
+                  <?php endif; ?>
                 <div class="panel">
                     <div class="el-name m-2"><?php echo $tasks[$i]["name"];?></div>
                     <div class="el-mail m-2"><?php echo $tasks[$i]["email"]; ?></div>
